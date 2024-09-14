@@ -8,8 +8,8 @@ POC of basic implementation of the [circuit breaker architecture pattern](https:
 
 ## Available Endpoints
 
-* **_POST /status_client/:user_ui_**
-* **_POST /user/:user_ui_**
+* **_GET /status_client/:user_ui_**
+* **_GET /user/:user_ui_**
 
 ## First steps
 
