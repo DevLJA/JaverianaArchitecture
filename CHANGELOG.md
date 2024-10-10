@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 ### Added
+- Chess Image Generator
 - POC new circuit breaker with golang
 ### Changed
 ### Removed
