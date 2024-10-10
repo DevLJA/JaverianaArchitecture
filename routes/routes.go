@@ -4,16 +4,19 @@ import (
 	"CircuitBreaker-LauraJoya/controllers"
 	"CircuitBreaker-LauraJoya/services"
 	"fmt"
-	"github.com/gorilla/mux"
 	"net/http"
+
+	"github.com/gorilla/mux"
 )
 
 func SetCustomHttpHandlers(userService services.UserService) *mux.Router {
 	userController := controllers.NewUserController(userService)
+	chessController := controllers.NewChessController()
 
 	r := mux.NewRouter()
 	r.HandleFunc("/status_client/{userID:[0-9]+}", userController.GetInfoClient).Methods("GET")
 	r.HandleFunc("/user/{userID:[0-9]+}", userController.GetBasicInfoSimulated).Methods("GET")
+	r.HandleFunc("/chess/image", chessController.GetImageFEN).Methods("GET")
 
 	return r
 }
