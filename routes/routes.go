@@ -16,7 +16,7 @@ func SetCustomHttpHandlers(userService services.UserService) *mux.Router {
 	r := mux.NewRouter()
 	r.HandleFunc("/status_client/{userID:[0-9]+}", userController.GetInfoClient).Methods("GET")
 	r.HandleFunc("/user/{userID:[0-9]+}", userController.GetBasicInfoSimulated).Methods("GET")
-	r.HandleFunc("/chess/image", chessController.GetImageFEN).Methods("GET")
+	r.HandleFunc("/chess/image", chessController.GetImageFEN).Methods("POST")
 
 	return r
 }
