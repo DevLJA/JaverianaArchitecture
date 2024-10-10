@@ -4,8 +4,6 @@
 
 # Go Starter App
 
-![technology Go](https://img.shields.io/badge/technology-go-blue.svg)
-
 ## First steps
 
 ### Go Runtime Version
