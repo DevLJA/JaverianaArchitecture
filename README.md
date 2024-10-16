@@ -4,8 +4,6 @@
 
 # Go Starter App
 
-![technology Go](https://img.shields.io/badge/technology-go-blue.svg)
-
 ## First steps
 
 ### Go Runtime Version
@@ -37,7 +35,7 @@ Finally, run the `go run .` command to run the project
 
 ## Take a look at project list:
 
-1. [POC-circuit-breaker on Golang](CircuitBreaker.md)
+1. [POC-circuit-breaker on Golang](./docu/CircuitBreaker.md)
 
-2. [Chess Image Generator](ChessImage.md)
+2. [Chess Image Generator](./docu/ChessImage.md)
 
